@@ -11,7 +11,6 @@ var plusOne = function() {};
 
 console.log('plusOne success:', plusOne(99) === 100);
 
-
 /* =====================
 Instructions: "Write a function that adds two to the number provided"
 Example: "plusTwo(2) should return 3"
