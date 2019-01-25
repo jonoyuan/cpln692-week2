@@ -68,14 +68,38 @@
 
       /* Define your function here */
 
-      for (var i = 0; i < theArray.length, i++) { /* Inside the loop*/ }
+      var addLength = function(sumobj,value) {
+        console.log(`Value ${value}. Added ${value.length}`);
+        // sumobj = sumobj + value.length; // sumobj doesn't leave the scope. why?
+        return sumobj + value.length
+      }
+      var addValue  = function(sumobj,value) {
+        console.log(`Value ${value}. Added ${value}`);
+        // sumobj = sumobj + value;
+        return sumobj + value
+      }
+
+      var sumSome = function(array,index) {
+          var arrayValue = array[index];
+          if (typeof arrayValue === 'string') {         // String case
+            //yourSum = yourSum + arrayValue.length;
+            yourSum = addLength(yourSum,arrayValue);
+          } else if (typeof arrayValue === 'number') {  // Number case
+            //yourSum = yourSum + arrayValue;
+            yourSum = addValue(yourSum,arrayValue);
+          } else {                                      // Otherwise
+            console.log("Not sure how to proceed with value index ",index,":", arrayValue);
+          }
+      }
+
+      for (var i = 0; i < theArray.length; i++) { sumSome(theArray,i); }
 
       /* =====================
 
       End code
 
       ===================== */
-      console.log("Success: ", yourSum === 169)
+      console.log(`Success: ${yourSum === 169}. Your sum is ${yourSum}.`)
     </script>
   </body>
 </html>
