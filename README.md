@@ -2,6 +2,8 @@
 
 *As always: make a copy (fork) of this repository to commit changes to*
 
+[slides](https://docs.google.com/presentation/d/1-Mbez8TbJL6tEYH15HQMPqfbiUqQAintPIqHmLVMj9A/edit#slide=id.g4ca55399dd_0_0)
+
 ## Week 1 Review
 
 ### Git/Github continued
