@@ -13,7 +13,7 @@ and follow in-comment instructions.
 
 #### Part 2
 
-Open [part2-data-transformation.html](../part2-data-transformation.html)
+Open [part2-data-transformation.html](part2-data-transformation.html)
 and follow in-comment instructions. Try to organize your code (and your
 understanding of the problem!) into these discrete tasks:
 - Filtering values
