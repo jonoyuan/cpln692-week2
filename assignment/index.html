@@ -25,8 +25,9 @@
     <!--Your code starts here-->
     <script>
       var map = L.map('map', {
-        center: [39.9522, -75.1639],
-        zoom: 14
+        center: [39.9822, -75.1339],
+        zoom: 12
+
       });
       var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
 	      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -95,7 +96,7 @@
           if (loc["ZIP"] >= 19140 && loc["ZIP"] <= 19149) {
             let dental = ' ';
             let d_icon = L.Icon.Default.prototype;
-            if (loc["DENTAL_PHONE"] !== "N/A") {
+            if (loc["DENTAL_PHONE"].trim() !== "N/A") {
               dental = `Dental: ${loc["DENTAL_PHONE"]}<br>`;
               d_icon = greenIcon;
             }
